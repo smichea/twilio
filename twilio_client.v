@@ -5,14 +5,14 @@ import net.http
 import net.urllib
 import json
 
-struct TwilioClient {
+pub struct TwilioClient {
 	api_version string = '2010-04-01'
 	account_sid string
 	auth_token  string
 	from_number string
 }
 
-struct TwilioResponse {
+pub struct TwilioResponse {
 	account_sid           string
 	api_version           string
 	body                  string
